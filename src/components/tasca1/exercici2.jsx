@@ -22,8 +22,6 @@ function Exercici2() {
     
   return (
 
-    <body>
-
     <div className="block">
       <div className="block1">
         
@@ -46,9 +44,6 @@ function Exercici2() {
         </div>
       </div>
     </div>
-    
-    <script src="script.js"></script>
-</body>
 
   )
 }

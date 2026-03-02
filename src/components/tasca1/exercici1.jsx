@@ -15,22 +15,16 @@ function Exercici1() {
     function reset() {
         setcomptador(0)
   }
-
-  let color
-
-  if (comptador > 0) color = "green";
-  else if (comptador < 0) color = "red";
-  else color = "black";
     
   return (
-
-    <body>
 
     <div className="block">
       <div className="block1">
         <div className="comptador_txt">
           <p>Comptador Interactiu</p>
         </div>
+
+        <h1>VISCA CUPERCELL US ESTIMO</h1>
 
         <div className="comptador">
           <div className="comptador_num">
@@ -53,9 +47,6 @@ function Exercici1() {
         </div>
       </div>
     </div>
-    
-    <script src="script.js"></script>
-</body>
 
   )
 }
