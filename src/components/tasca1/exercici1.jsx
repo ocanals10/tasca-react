@@ -24,11 +24,9 @@ function Exercici1() {
           <p>Comptador Interactiu</p>
         </div>
 
-        <h1>VISCA CUPERCELL US ESTIMO</h1>
-
         <div className="comptador">
           <div className="comptador_num">
-            <span id="number" style={{ color: color }}>{comptador}</span>
+            <span id="number" style={{ color: "black" }}>{comptador}</span>
           </div>
         </div>
 
