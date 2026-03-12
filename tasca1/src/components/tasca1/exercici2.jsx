@@ -1,56 +1,31 @@
-import {useState} from "react";
-import './exercici2.css'
+import { useState } from "react";
 
 function Exercici2() {
-    const [cercle, background, color] =useState(0)
+  const [color, setColor] = useState("grey");
 
-    function incrementar() {
-        if (titol.style.color == "red"){
-            titol.style.color = "black"
-        }
-  }
+  const cercleStyle = {
+    width: "150px",
+    height: "150px",
+    borderRadius: "50%",
+    backgroundColor: color, 
+    margin: "20px auto",
+    border: "2px solid #333",
+    transition: "background-color 0.3s ease" 
+  };
 
-    function decrementar() {
-        if (cercle != "yellow") background.color = "yellow";
-  }
-
-    function reset() {
-        if (comptador > 0) background.color = "green";
-        else if (comptador < 0) color = "red";
-        else color = "black";
-  }
-    
   return (
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h2>Canviador de Colors</h2>
+      
+      <div style={cercleStyle}></div>
 
-    <body>
-
-    <div className="block">
-      <div className="block1">
-        
-        <div className="cercle">
-
-        </div>
-
-        <div className="select">
-          <div className="descrementar">
-            <button onClick={decrementar}>Decrementar</button>
-          </div>
-
-          <div className="reiniciar">
-            <button onClick={reset}>Reset</button>
-          </div>
-
-          <div className="incrementar">
-            <button onClick={incrementar}>Incrementar</button>
-          </div>
-        </div>
+      <div className="buttons">
+        <button onClick={() => setColor("red")}>Vermell</button>
+        <button onClick={() => setColor("blue")}>Blau</button>
+        <button onClick={() => setColor("green")}>Verd</button>
       </div>
     </div>
-    
-    <script src="script.js"></script>
-</body>
-
-  )
+  );
 }
 
-export default Exercici2
+export default Exercici2;

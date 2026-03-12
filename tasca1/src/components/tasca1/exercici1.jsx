@@ -15,16 +15,8 @@ function Exercici1() {
     function reset() {
         setcomptador(0)
   }
-
-  let color
-
-  if (comptador > 0) color = "green";
-  else if (comptador < 0) color = "red";
-  else color = "black";
     
   return (
-
-    <body>
 
     <div className="block">
       <div className="block1">
@@ -34,7 +26,7 @@ function Exercici1() {
 
         <div className="comptador">
           <div className="comptador_num">
-            <span id="number" style={{ color: color }}>{comptador}</span>
+            <span id="number" style={{ color: "black" }}>{comptador}</span>
           </div>
         </div>
 
@@ -53,9 +45,6 @@ function Exercici1() {
         </div>
       </div>
     </div>
-    
-    <script src="script.js"></script>
-</body>
 
   )
 }
