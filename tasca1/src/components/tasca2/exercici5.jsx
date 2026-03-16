@@ -4,7 +4,7 @@ import imatge2 from "../imatges/imatge2.jpg";
 import imatge3 from "../imatges/imatge3.jpg";
 import imatge4 from "../imatges/imatge4.jpg";
 
-function Exercici2() {
+function Exercici5() {
 
     const imatges = [imatge1, imatge2, imatge3, imatge4]
 
@@ -31,4 +31,4 @@ function Exercici2() {
     )
 }
 
-export default Exercici2
+export default Exercici5
