@@ -5,6 +5,7 @@ import Exercici3 from './components/tasca1/exercici3'
 import Exercici4 from './components/tasca2/exercici4'
 import Exercici5 from './components/tasca2/exercici5'
 import Menu from './components/menu'
+import Exercici6 from './components/tasca3/exercici6'
 
 
 function App() {
@@ -13,16 +14,18 @@ function App() {
 
   function getTascaComponent(){
     switch (tascaSeleccionada) {
-      case "tasca 1":
+      case "Tasca 1":
         return Exercici1
-      case "tasca 2":
+      case "Tasca 2":
         return Exercici2
-      case "tasca 3":
+      case "Tasca 3":
         return Exercici3
-      case "tasca 4":
+      case "Tasca 4":
         return Exercici4
-      case "tasca 5":
+      case "Tasca 5":
         return Exercici5
+      case "Tasca 6":
+        return Exercici6
       default: return null
 
     }
@@ -33,7 +36,11 @@ function App() {
     <div>
       <Menu canviarTasca={setTascaSeleccionada} />
       
-      <Component />
+      <div className="contingut">
+        {getTascaComponent()} 
+      </div>
+      
+      {Component && <Component />}
     </div>
   )
 }

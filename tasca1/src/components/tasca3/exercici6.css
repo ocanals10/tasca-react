@@ -1,0 +1,48 @@
+.area-exercici6 .contingut {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 20%;
+  padding: 40px;
+}
+
+.area-exercici6 .card-blanca {
+  background-color: white;
+  width: 350px;
+  border-radius: 4px;
+  overflow: hidden;
+  font-family: Arial;
+  text-align: left; 
+  margin-bottom: 40px;
+}
+
+.area-exercici6 .imatge {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.area-exercici6 .titol {
+  font-size: 1.5rem;
+  margin: 16px;
+  color: #333; 
+}
+
+.area-exercici6 .text {
+  font-size: 0.9rem;
+  margin: 0 16px 16px 16px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.area-exercici6 .botons-links {
+  padding: 8px 16px 16px 16px;
+}
+
+.area-exercici6 .link1, .area-exercici6 .link2 {
+  color: #1976d2;
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin-right: 20px;
+}
