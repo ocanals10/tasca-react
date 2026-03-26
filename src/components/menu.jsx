@@ -1,12 +1,20 @@
-
 function Menu({canviarTasca}) {
-
-    const menuItems = ["tasca 1", "tasca 2", "tasca 3", "tasca 4", "tasca 5"];
+    const menuItems = ["Tasca 1", "Tasca 2", "Tasca 3", "Tasca 4", "Tasca 5","Tasca 6"];
 
   return (
-    <div>
+
+    <div style={{ 
+        display: 'flex',    
+        justifyContent: 'center',
+        gap: '10px',          
+        padding: '20px',     
+    }}>
       {menuItems.map((item) => (
-        <button key={item} onClick={() => canviarTasca(item)}>
+        <button 
+          key={item} 
+          onClick={() => canviarTasca(item)}
+          style={{ padding: '10px 20px', cursor: 'pointer' }}
+        >
           {item}
         </button>
       ))}
@@ -14,4 +22,4 @@ function Menu({canviarTasca}) {
   );
 }
 
-export default Menu
+export default Menu;
